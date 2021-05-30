@@ -1,9 +1,8 @@
 import {Stage, Layer, Image} from 'react-konva';
 import PolygonsGroup from './PoligonsGroup';
-import './App.css';
+import '../App.css';
 
 export default function CanvasContainer({ image, polygons}) {
-
 	return (
 			<Stage width={image?.width} height={image?.height}>
 				<Layer>

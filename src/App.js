@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import imageToBase64 from 'image-to-base64/browser';
 import CanvasContainer from './components/CanvasContainer';
+import Spinner from './_shared/spinner/spinner';
 import {getMpBase64} from "./_shared/helpers";
 import './App.css';
 
@@ -43,7 +44,10 @@ export default function App({src}) {
 
 	return (
 		<div>
-			<button onClick={sendRequest}>Process document</button>
+			<button className={`process_button ${loading && "loading"}`} onClick={sendRequest}>
+				{loading && <Spinner />}
+				Process document
+			</button>
 			<CanvasContainer image={bgImage} polygons={polygons}/>
 		</div>
 	);

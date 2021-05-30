@@ -17,11 +17,11 @@ const lightenDarkerColor = (color, percent) => {
 };
 
 export const getPolygonColors = () => {
-	const bgColor = getRandomColor()
+	const bgColor = getRandomColor();
 	return {
 		bgColor,
 		borderColor: lightenDarkerColor(bgColor, -20)
-	}
+	};
 }
 
 

@@ -1,13 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import imageToBase64 from 'image-to-base64/browser';
 import CanvasContainer from './components/CanvasContainer';
 import Spinner from './_shared/spinner/spinner';
-import {getMpBase64} from "./_shared/helpers";
+import { getMpBase64 } from "./_shared/helpers";
+import API from './api';
 import './App.css';
 
-import API from './api';
-
-export default function App({src}) {
+export default function App({ src }) {
 	const [bgImage, setBgImage] = useState(undefined);
 	const [polygons, setPolygons] = useState(undefined);
 	const [loading, setLoading] = useState(false);

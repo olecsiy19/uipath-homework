@@ -1,5 +1,5 @@
 import {Group} from 'react-konva';
-import Polygon from './Poligon';
+import Polygon from './Polygon';
 
 export default function PolygonsGroup ({ polygons }) {
 	return (<Group>

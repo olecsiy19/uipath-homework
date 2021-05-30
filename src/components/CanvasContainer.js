@@ -1,5 +1,5 @@
 import {Stage, Layer, Image} from 'react-konva';
-import PolygonsGroup from './PoligonsGroup';
+import PolygonsGroup from './PolygonsGroup';
 import '../App.css';
 
 export default function CanvasContainer({ image, polygons}) {
